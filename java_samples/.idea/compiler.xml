@@ -23,11 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="pwmLED" />
+        <module name="rgbLED" />
         <module name="test-74hc595" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="pwmLED" target="1.6" />
+      <module name="rgbLED" target="1.6" />
       <module name="test-74hc595" target="1.6" />
     </bytecodeTargetLevel>
   </component>
