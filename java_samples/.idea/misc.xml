@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/../test-74hc595/pom.xml" />
         <option value="$PROJECT_DIR$/../pwmLED/pom.xml" />
         <option value="$PROJECT_DIR$/../rgbLED/pom.xml" />
+        <option value="$PROJECT_DIR$/../adxl345/pom.xml" />
       </list>
     </option>
   </component>
