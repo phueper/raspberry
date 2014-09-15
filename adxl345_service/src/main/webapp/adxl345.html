@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!-- copied from http://www.html5canvastutorials.com/three/html5-canvas-webgl-plane-with-three-js/ -->
+<html>
+<head>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body style="background: lightgray">
+<div id="container"></div>
+<script src="http://www.html5canvastutorials.com/libraries/three.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script defer="defer">
+
+    // let's only animate 2 times per second, to keep the load on the raspberry pi low
+    var fps = 10;
+
+    // this function is executed on each animation frame
+    function animate() {
+        setTimeout(function () {
+            jQuery.ajax('/adxl345/data').done(function (data) {
+                console.log('Data: ', data);
+                // adxl345 acceleration is 0 (horizontal, i.e. 1g acceleration) to +/- 255 (vertical, i.e. 0g) assuming that only the gravity acceleration is measured and no 
+                // movement acceleration is happening... 2 adxl345 value 0 = rotaion 0 radians, and +/- 255 = rotation 90 degrees or Pi/2 radians
+                function adxl345ToRad(accValue) {
+                    return accValue * -1 * Math.PI / 2 / 255
+                }
+
+                plane.rotation.x = adxl345ToRad(data.x);
+                plane.rotation.y = adxl345ToRad(data.y);
+                //plane.rotation.z += angleChange;
+
+                // render
+                renderer.render(scene, camera);
+
+                // request new frame
+                requestAnimationFrame(function () {
+                    animate();
+                });
+            });
+        }, 1000 / fps);
+    }
+
+    // renderer
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    // Set the background color of the renderer to black, with full opacity
+    renderer.setClearColor(0x000000, 0);
+    document.body.appendChild(renderer.domElement);
+
+    // camera
+    var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.y = -550;
+    camera.position.z = 200;
+    camera.rotation.x = 70 * (Math.PI / 180);
+
+    // scene
+    var scene = new THREE.Scene();
+
+    // plane, is a plane and the center normal vector as a white red line
+    var plane = new THREE.Object3D();
+    // the actual plane
+    var p = new THREE.Mesh(new THREE.PlaneGeometry(300, 300, 30, 30), new THREE.MeshBasicMaterial({wireframe: true, color: 0xff0000}));
+    p.overdraw = true;
+    plane.add(p);
+    // and the vector line
+    var lg = new THREE.Geometry();
+    lg.vertices.push(new THREE.Vector3(0, 0, 0));
+    lg.vertices.push(new THREE.Vector3(0, 0, 60));
+    var l = new THREE.Line(lg, new THREE.LineBasicMaterial({linewidth: 5, color: 0xff0000}));
+    plane.add(l);
+
+    plane.rotation.x += 10;
+
+    plane.rotation.y += 10;
+
+
+    scene.add(plane);
+
+    // from https://github.com/sole/three.js-tutorials/blob/master/drawing_the_axes/main.js
+    // Add axes
+    axes = buildAxes(1000);
+    scene.add(axes);
+
+    function buildAxes(length) {
+        var axes = new THREE.Object3D();
+
+        axes.add(buildAxis(new THREE.Vector3(0, 0, 0), new THREE.Vector3(length, 0, 0), 0xFF0000, false)); // +X
+        axes.add(buildAxis(new THREE.Vector3(0, 0, 0), new THREE.Vector3(-length, 0, 0), 0xFF0000, true)); // -X
+        axes.add(buildAxis(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, length, 0), 0x00FF00, false)); // +Y
+        axes.add(buildAxis(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, -length, 0), 0x00FF00, true)); // -Y
+        axes.add(buildAxis(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, length), 0x0000FF, false)); // +Z
+        axes.add(buildAxis(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, -length), 0x0000FF, true)); // -Z
+
+        return axes;
+    }
+
+    function buildAxis(src, dst, colorHex, dashed) {
+        var geom = new THREE.Geometry(),
+                mat;
+
+        if (dashed) {
+            mat = new THREE.LineDashedMaterial({ linewidth: 3, color: colorHex, dashSize: 3, gapSize: 3 });
+        } else {
+            mat = new THREE.LineBasicMaterial({ linewidth: 3, color: colorHex });
+        }
+
+        geom.vertices.push(src.clone());
+        geom.vertices.push(dst.clone());
+        geom.computeLineDistances(); // This one is SUPER important, otherwise dashed lines will appear as simple plain lines
+
+        var axis = new THREE.Line(geom, mat, THREE.LinePieces);
+
+        return axis;
+    }
+
+
+    // start animation
+    animate();
+</script>
+</body>
+</html>      

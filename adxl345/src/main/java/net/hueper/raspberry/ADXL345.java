@@ -28,7 +28,13 @@ public class ADXL345
     
     private final I2CBus i2cBus;
     private final I2CDevice i2cDevice;
-    
+
+    public void cleanUp() throws IOException
+    {
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        i2cBus.close();
+    }
+
     public class AccelerationData {
         short x = 0;
         short y = 0;
