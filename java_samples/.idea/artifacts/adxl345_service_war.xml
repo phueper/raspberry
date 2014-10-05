@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="adxl345_service:war">
     <output-path>$PROJECT_DIR$/../adxl345_service/target</output-path>
-    <root id="archive" name="adxl345_service-0.1-SNAPSHOT.war">
+    <root id="archive" name="adxl345_service-0.0.1-SNAPSHOT.war">
       <element id="artifact" artifact-name="adxl345_service:war exploded" />
     </root>
   </artifact>

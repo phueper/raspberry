@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../adxl345_service" />
+    <file type="web" url="file://$PROJECT_DIR$/../svesch/rest2pi/rest2pi-service" />
   </component>
   <component name="IdProvider" IDEtalkID="E1E2FCD96DCBE46F21C0A746846C54F1" />
   <component name="MavenProjectsManager">
@@ -15,6 +16,7 @@
         <option value="$PROJECT_DIR$/../rgbLED/pom.xml" />
         <option value="$PROJECT_DIR$/../adxl345/pom.xml" />
         <option value="$PROJECT_DIR$/../adxl345_service/pom.xml" />
+        <option value="$PROJECT_DIR$/../svesch/rest2pi/pom.xml" />
       </list>
     </option>
   </component>

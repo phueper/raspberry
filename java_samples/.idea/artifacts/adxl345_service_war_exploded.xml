@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="adxl345_service:war exploded">
-    <output-path>$PROJECT_DIR$/../adxl345_service/target/adxl345_service-0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/../adxl345_service/target/adxl345_service-0.0.1-SNAPSHOT</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="adxl345_service/web/Web" />
       <element id="directory" name="WEB-INF">

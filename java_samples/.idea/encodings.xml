@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$/../adxl345" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../pwmLED" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../rgbLED" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../svesch/rest2pi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../svesch/rest2pi/rest2pi-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../svesch/rest2pi/rest2pi-webapp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../test-74hc595" charset="UTF-8" />
   </component>
 </project>

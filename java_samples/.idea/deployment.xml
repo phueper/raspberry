@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PublishConfigData" serverName="sftp@raspberrypi">
     <serverData>
-      <paths name="sftp@raspberrypi">
+      <paths name="sftp@pattypi">
         <serverdata>
           <mappings>
             <mapping deploy="java_samples" local="$PROJECT_DIR$" web="/" />
