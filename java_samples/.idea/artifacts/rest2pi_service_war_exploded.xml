@@ -1,8 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="rest2pi-service:war exploded">
-    <output-path>$PROJECT_DIR$/../svesch/rest2pi/rest2pi-service/target/rest2pi-service-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/target/rest2pi-service-0.0.1-SNAPSHOT</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="rest2pi-service/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="rest2pi-service" />
@@ -41,6 +40,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.5.RELEASE" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="rest2pi-service/web/Web" />
     </root>
   </artifact>
 </component>

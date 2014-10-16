@@ -26,6 +26,7 @@
         <module name="adxl345_service" />
         <module name="pwmLED" />
         <module name="rest2pi-service" />
+        <module name="rest2pi-webapp" />
         <module name="rgbLED" />
         <module name="test-74hc595" />
       </profile>
@@ -35,6 +36,7 @@
       <module name="adxl345_service" target="1.6" />
       <module name="pwmLED" target="1.6" />
       <module name="rest2pi-service" target="1.7" />
+      <module name="rest2pi-webapp" target="1.7" />
       <module name="rgbLED" target="1.6" />
       <module name="test-74hc595" target="1.6" />
     </bytecodeTargetLevel>
