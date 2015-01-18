@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="adxl345_service:war exploded">
     <output-path>$PROJECT_DIR$/../adxl345_service/target/adxl345_service-0.0.1-SNAPSHOT</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="adxl345_service/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="adxl345_service" />
@@ -23,16 +22,20 @@
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.6.RELEASE" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.6.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
           <element id="archive" name="adxl345-0.1-SNAPSHOT.jar">
             <element id="module-output" name="adxl345" />
           </element>
           <element id="library" level="project" name="Maven: com.pi4j:pi4j-core:1.0-SNAPSHOT" />
         </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../adxl345_service/target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="adxl345_service/web/Web" />
     </root>
   </artifact>
 </component>

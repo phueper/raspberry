@@ -6,12 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/../adxl345_service/adxl345_service.iml" filepath="$PROJECT_DIR$/../adxl345_service/adxl345_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_samples.iml" filepath="$PROJECT_DIR$/java_samples.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pwmLED/pwmLED.iml" filepath="$PROJECT_DIR$/../pwmLED/pwmLED.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-parent.iml" filepath="$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-parent.iml" group="rest2pi-parent and modules" />
-      <module fileurl="file://$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/rest2pi-service.iml" filepath="$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/rest2pi-service.iml" group="rest2pi-parent and modules" />
-      <module fileurl="file://$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-webapp/rest2pi-webapp.iml" filepath="$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-webapp/rest2pi-webapp.iml" group="rest2pi-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../intellij_project_files/rest2pi-parent.iml" filepath="$PROJECT_DIR$/../intellij_project_files/rest2pi-parent.iml" group="rest2pi-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../intellij_project_files/rest2pi-prep.iml" filepath="$PROJECT_DIR$/../intellij_project_files/rest2pi-prep.iml" group="rest2pi-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../intellij_project_files/rest2pi-service.iml" filepath="$PROJECT_DIR$/../intellij_project_files/rest2pi-service.iml" group="rest2pi-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../intellij_project_files/rest2pi-webapp.iml" filepath="$PROJECT_DIR$/../intellij_project_files/rest2pi-webapp.iml" group="rest2pi-parent and modules" />
       <module fileurl="file://$PROJECT_DIR$/../rgbLED/rgbLED.iml" filepath="$PROJECT_DIR$/../rgbLED/rgbLED.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test-74hc595/test-74hc595.iml" filepath="$PROJECT_DIR$/../test-74hc595/test-74hc595.iml" />
     </modules>
   </component>
 </project>
-

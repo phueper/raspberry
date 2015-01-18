@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/../adxl345_service" libraries="{adxl345_service node_modules}" />
+    <file url="file://$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-webapp" libraries="{rest2pi-webapp node_modules}" />
+  </component>
+</project>

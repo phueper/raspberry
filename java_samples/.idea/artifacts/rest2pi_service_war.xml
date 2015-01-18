@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="rest2pi-service:war">
     <output-path>$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/target</output-path>
-    <root id="archive" name="rest2pi-service-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="rest2pi-service.war">
       <element id="artifact" artifact-name="rest2pi-service:war exploded" />
     </root>
   </artifact>

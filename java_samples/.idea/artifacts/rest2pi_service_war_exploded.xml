@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="rest2pi-service:war exploded">
-    <output-path>$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/target/rest2pi-service-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/target/rest2pi-service</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -10,12 +10,6 @@
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:1.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.1.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.0.5.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.5.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.0.5.RELEASE" />
-          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.0.5.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.7" />
@@ -29,16 +23,26 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:7.0.54" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:7.0.54" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-logging-juli:7.0.54" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.3" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.3" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.0.3.Final" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.1.GA" />
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.0.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.3" />
+          <element id="library" level="project" name="Maven: com.pi4j:pi4j-core:1.0-SNAPSHOT" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../pqlab/java/rest2pi/rest2pi-service/target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="rest2pi-service/web/Web" />
     </root>
